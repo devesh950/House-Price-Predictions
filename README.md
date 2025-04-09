@@ -9,13 +9,12 @@ House-Price-Predictions/ ├── data/ # Raw and processed datasets ├── 
 
 
 ## 🚀 How to Run
-
-1. Clone the repo:
+✅ Step 1 .Clone the repo:
    ```bash
    git clone https://github.com/devesh950/House-Price-Predictions.git
    cd House-Price-Predictions
 
-2.(Optional) Create a virtual environment:
+✅ Step 2.(Optional) Create a virtual environment:
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 3.Install dependencies:
