@@ -4,3 +4,4 @@ This project predicts house prices using machine learning techniques. It include
 
 ## 📁 Project Structure
 
+House-Price-Predictions/ ├── data/ # Raw and processed datasets ├── notebooks/ # Jupyter Notebooks for exploration and modeling ├── src/ # Python scripts and utility functions ├── models/ # Saved ML models ├── .gitignore ├── README.md └── requirements.txt
