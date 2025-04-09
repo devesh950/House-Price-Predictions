@@ -11,7 +11,7 @@ During model building we will cover almost all data science concepts such as dat
 🚀Deploy this app to cloud (AWS EC2):-
 1.Create EC2 instance using amazon console, also in security group add a rule to allow HTTP incoming traffic
 2.Now connect to your instance using a command like this,
-ssh -i "C:\Users\Viral\.ssh\Banglore.pem" ubuntu@ec2-3-133-88-210.us-east-2.compute.amazonaws.com
+ssh -i "C:\Users\sidh\.ssh\sidh95.pem" ec2-100-24-68-160.compute-1.amazonaws.com
 3.nginx setup
 (a).Install nginx on EC2 instance using these commands,
 sudo apt-get update
@@ -30,7 +30,7 @@ sudo service nginx restart
 server {
     listen 80;
         server_name bhp;
-        root /home/ubuntu/BangloreHomePrices/client;
+        root /home/ubuntu/House/client;
         index app.html;
         location /api/ {
              rewrite ^/api(.*) $1 break;
@@ -45,8 +45,8 @@ sudo unlink default
 sudo service nginx restart
 7.Now install python packages and start flask server
 sudo apt-get install python3-pip
-sudo pip3 install -r /home/ubuntu/BangloreHomePrices/server/requirements.txt
-python3 /home/ubuntu/BangloreHomePrices/client/server.py
+sudo pip3 install -r /home/ubuntu/House/server/requirements.txt
+python3 /home/ubuntu/House/client/server.py
 
 Running last command above will prompt that server is running on port 5000.
 Now just load your cloud url in browser (LOOK LIKE THIS ec2-100-24-68-160.compute-1.amazonaws.com) and this will be fully functional website running in production cloud environment
