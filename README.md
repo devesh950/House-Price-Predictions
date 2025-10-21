@@ -1,4 +1,4 @@
-# 🏠 House Price Predictions
+# 🏠 House Price Analytics Dashboard
 
 This project predicts house prices using machine learning techniques. It includes data preprocessing, feature engineering, model training, and evaluation.
 
